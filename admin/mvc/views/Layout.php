@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="<?php echo $DOMAIN ?>/public/font-awesome/css/font-awesome.min.css" />
     <script src="<?php echo $DOMAIN ?>/public/bootstrap5/jquery.min.js"></script>
     <script src="<?php echo $DOMAIN ?>/public/bootstrap5/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="<?php echo $DOMAIN ?>/public/css/style.css">
     <title>Document</title>
 </head>
 
@@ -22,16 +23,21 @@
             <div class="col-lg-3 col-md-4 task">
                 <div class="title">TASK</div>
                 <div class="nav-list">
-                    <div class="all-item bg-primary mt-2">List of all items</div>
+                    <div class="all-item bg-primary mt-2">Danh Mục</div>
                     <div class="categories">
-                        <div class="category mt-2">Beverages</div>
-                        <div class="category mt-2">Breakfast</div>
-                        <div class="category mt-2">Chicken</div>
-                        <div class="category mt-2">Burgers</div>
-                        <div class="category mt-2">Salads</div>
+                        <div class="category mt-2">
+                            <button type="button" class="btn btn-secondary">Thông tin khách hàng</button>
+                        </div>
+                        <div class="category mt-2">
+                            <button type="button" class="btn btn-secondary">Thêm thông tin loại phòng</button>
+                        </div>
+                        <div class="category mt-2">
+                            <form action="<?php echo $DOMAIN ?>/Home/StatisticPage" method="get">
+                                <button type="button" class="btn btn-secondary">Thống kê</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <div class="add-item bg-secondary mt-2">Add new item</div>
             </div>
             <div class="col-lg-9 col-md-8 content">
                 <?php require_once 'content/' . $data['page'] . '.php' ?>

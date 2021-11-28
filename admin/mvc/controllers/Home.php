@@ -24,6 +24,11 @@ class Home extends Controller
         $this->data['page'] = 'DetailClient';
         $this->data['client'] = $client->getClient($id);
         $this->data['dataClient'] = $client->getDetailClient($id);
-        $this->view("layout", $this->data);
+        $this->view("Layout", $this->data);
+    }
+    function StatisticPage()
+    {
+        $this->data['page'] = 'Statistic';
+        $this->view('Layout', $this->data);
     }
 }
