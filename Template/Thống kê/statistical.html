@@ -1,128 +1,152 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../css/bootstrap5/bootstrap.min.css"/>
-        <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css" />
-        <script src="../css/bootstrap5/jquery.min.js"></script>
-        <script src="../css/bootstrap5/bootstrap.bundle.min.js"></script>
-        <link href="../css/style.css">
-        <title>Document</title>
-        <style>
-            .category button{
-    width: 100%;
-    height: 45px;
-    font-size: 20px;
-    color: black;
-    background-color: white;
-    border: none;
-    box-shadow: none;
-}
-.category:hover {
-    background-color: #505050;
-    color: white;
-}
-.category-checked {
-    background-color: #505050;
-    color: white;
-    animation: blink_background ease-in-out 1.5s infinite;
-}
-@keyframes blink_background {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-        </style>
-    </head>
-    <body>
-        <div style="text-align: center;">
-            <h1>Thông tin khách hàng</h1>
-        </div>
-        <div class="container">
-            <div class="row mt-3">
-                <div class="col-lg-3 col-md-4 task">
-                    <div class="title">TASK</div>
-                    <div class="nav-list">
-                        <div class="all-item bg-primary mt-2">Danh Mục</div>
-                        <div class="categories">
-                            <div class="category mt-2"><button type="button" class="btn btn-secondary">Thông tin khách hàng</button></div>
-                            <div class="category mt-2"><button type="button" class="btn btn-secondary">Thêm thông tin loại phòng</button></div>
-                            <div class="category mt-2"><button type="button" class="btn btn-secondary">Thống kê</button></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-8 action">
-                    <div><button type="button" class="btn btn-primary" style="margin: 20px" >Trở lại</button></div>
-                    <div class="user-info">
-                        <ul class="list-group">
-                            <li class="list-group-item list-group-item-success">Mã khách hàng: KH000001</li>
-                            <li class="list-group-item list-group-item-success">Họ và tên: Nguyen Van A</li>
-                            <li class="list-group-item list-group-item-success">Điện thoại: 1112223331</li>
-                            <li class="list-group-item list-group-item-success">Email: vanA@gmail.com</li>
-                            <li class="list-group-item list-group-item-success">User Name: vanA</li>
-                          </ul>
-                    </div>
-                    <table class="table table-hover">
-                        <thead class="thead-dark">
-                          <tr>
-                            <th scope="col">Mã đặt phòng</th>
-                            <th scope="col">Ngày giờ đặt</th>
-                            <th scope="col">Số khách</th>
-                            <th scope="col">Ngày nhận phòng</th>
-                            <th scope="col">Ngày trả phòng</th>
-                            <th scope="col">Tổng tiền</th>
-                            <th scope="col">Tình trạng</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th>DP21112021000001</th>
-                            <td>2021-11-21</td>
-                            <td>2</td>
-                            <td>2021-11-22</td>
-                            <td>2021-11-24</td>
-                            <td>10000</td>
-                            <td>1</td>
-                          </tr>
-                          <tr>
-                            <th>DP21112021000001</th>
-                            <td>2021-11-21</td>
-                            <td>2</td>
-                            <td>2021-11-22</td>
-                            <td>2021-11-24</td>
-                            <td>10000</td>
-                            <td>1</td>
-                          </tr>
-                          <tr>
-                            <th>DP21112021000001</th>
-                            <td>2021-11-21</td>
-                            <td>2</td>
-                            <td>2021-11-22</td>
-                            <td>2021-11-24</td>
-                            <td>10000</td>
-                            <td>1</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap5/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../css/font-awesome/css/font-awesome.min.css"
+    />
+    <script src="../css/bootstrap5/jquery.min.js"></script>
+    <script src="../css/bootstrap5/bootstrap.bundle.min.js"></script>
+    <link href="../css/style.css" />
+    <title>Document</title>
+    <style>
+      .category button {
+        width: 100%;
+        height: 45px;
+        font-size: 20px;
+        color: black;
+        background-color: white;
+        border: none;
+        box-shadow: none;
+      }
+      .category:hover {
+        background-color: #505050;
+        color: white;
+      }
+      .category-checked {
+        background-color: #505050;
+        color: white;
+        animation: blink_background ease-in-out 1.5s infinite;
+      }
+      @keyframes blink_background {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h1>Thông tin khách hàng</h1>
+    </div>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-lg-3 col-md-4 task">
+          <div class="title">TASK</div>
+          <div class="nav-list">
+            <div class="all-item bg-primary mt-2">Danh Mục</div>
+            <div class="categories">
+              <div class="category mt-2">
+                <button type="button" class="btn btn-secondary">
+                  Thông tin khách hàng
+                </button>
+              </div>
+              <div class="category mt-2">
+                <button type="button" class="btn btn-secondary">
+                  Thêm thông tin loại phòng
+                </button>
+              </div>
+              <div class="category mt-2">
+                <button type="button" class="btn btn-secondary">
+                  Thống kê
+                </button>
+              </div>
             </div>
+          </div>
         </div>
-        <script>
-            $(".categories").hide();
-            $(".all-item").click(function () {
-                $(".categories").slideToggle();
-            });
-        </script>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
+        <div class="col-lg-9 col-md-8 action">
+          <div>
+            <button type="button" class="btn btn-primary" style="margin: 20px">
+              Trở lại
+            </button>
+          </div>
+          <form>
+            <label for="select-cn">Chọn chi nhánh:</label>
+            <select class="form-control" id="select-cn">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <div>
+                <label for="input-year" class="form-label mt-2">Nhập năm: </label>
+                <input type="number" class="form-control input-year" />
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Tháng</th>
+                <th scope="col">Số lượt khách</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+                    <td>1</td>
+                    <td>20</td>
+                  </tr>
+              <tr>
+                <td>2</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>20</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(".categories").hide();
+      $(".all-item").click(function () {
+        $(".categories").slideToggle();
+      });
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
