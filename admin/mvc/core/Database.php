@@ -4,8 +4,8 @@ class Database
     public $conn;
     protected $hostname = "localhost";
     protected $username = "root";
-    protected $password = "";
-    protected $dbname = 'restaurant_pos';
+    protected $password = "1915564";
+    protected $dbname = 'ass2';
     function __construct()
     {
         $this->conn = mysqli_connect($this->hostname, $this->username, $this->password, $this->dbname) or die('Can\'t connect to database');
