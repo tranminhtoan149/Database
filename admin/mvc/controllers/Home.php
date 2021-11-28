@@ -31,4 +31,16 @@ class Home extends Controller
         $this->data['page'] = 'Statistic';
         $this->view('Layout', $this->data);
     }
+    function AddPage()
+    {
+        $this->data['page'] = 'Add';
+        $room = $this->model('Room');
+        $room = $room->getLatesId();
+        $this->data['id'] = $room;
+        $this->view('Layout', $this->data);
+    }
+    function doAdd()
+    {
+        echo $_POST['name'];
+    }
 }

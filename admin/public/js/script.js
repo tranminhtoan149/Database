@@ -17,3 +17,26 @@ $(".search-input").keyup(function () {
         });
     }, 500);
 });
+
+//add item
+$(".button-add").click(function () {
+    if ($(".input-name").val() && $(".input-s").val() && $(".input-guest").val() && $(".input-bed").val() && $(".input-decr").val() && $(".input-supp").val()) {
+        $.ajax({
+            url: DOMAIN + "/Home/doAdd",
+            type: "post",
+            data: {
+                name: $(".input-name").val(),
+                s: $(".input-s").val(),
+                guest: $(".input-guest").val(),
+                bed: $(".input-bed").val(),
+                decr: $(".input-decr").val(),
+                supp: $(".input-supp").val(),
+            },
+            success: function (result) {
+                console.log(result);
+            },
+        });
+    } else {
+        $(".err").text("Please fill in all required fields");
+    }
+});

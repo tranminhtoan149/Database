@@ -29,7 +29,10 @@
                             <button type="button" class="btn btn-secondary">Thông tin khách hàng</button>
                         </div>
                         <div class="category mt-2">
-                            <button type="button" class="btn btn-secondary">Thêm thông tin loại phòng</button>
+                            <form action="<?php echo $DOMAIN ?>/Home/AddPage" method="get">
+                                <button type="submit" class="btn btn-secondary">Thêm thông tin loại phòng</button>
+                            </form>
+
                         </div>
                         <div class="category mt-2">
                             <form action="<?php echo $DOMAIN ?>/Home/StatisticPage" method="get">
@@ -45,7 +48,6 @@
         </div>
     </div>
     <script src="<?php echo $DOMAIN ?>/public/js/script.js">
-
     </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
