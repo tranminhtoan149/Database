@@ -1,3 +1,8 @@
+<div>
+    <button type="button" class="btn btn-primary" style="margin: 20px">
+        <a href="<?php echo $DOMAIN ?>/Home">Trở lại</a>
+    </button>
+</div>
 <div class="user-info">
     <ul class="list-group">
         <li class="list-group-item list-group-item-success">Mã khách hàng: <?php echo $data['client']['MA_KHACH_HANG'] ?></li>
