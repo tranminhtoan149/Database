@@ -22,7 +22,7 @@ class Home extends Controller
     {
         $client = $this->model('Client');
         $this->data['page'] = 'DetailClient';
-        $this->data['client']=''
+        $this->data['client'] = $client->getClient($id);
         $this->data['dataClient'] = $client->getDetailClient($id);
         $this->view("layout", $this->data);
     }

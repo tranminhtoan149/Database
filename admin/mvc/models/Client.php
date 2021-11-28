@@ -14,11 +14,12 @@ class Client extends Database
     }
     function getDetailClient($id)
     {
-        $sql = "SELECT * from DON_DAT_PHONG where MA_KHACH_HANG={$id} and NGAY_GIO_DAT > NOW()";
+        $sql = "SELECT * from DON_DAT_PHONG where MA_KHACH_HANG= '$id' and NGAY_GIO_DAT > NOW()";
         return $this->get_list($sql);
     }
     function getClient($id)
     {
-        $sql = "SELECT ";
+        $sql = "SELECT * from KHACH_HANG WHERE MA_KHACH_HANG='$id' ";
+        return $this->get_one($sql);
     }
 }
