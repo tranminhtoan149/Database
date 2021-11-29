@@ -11,17 +11,16 @@
     <script src="<?php echo $DOMAIN ?>/public/bootstrap5/jquery.min.js"></script>
     <script src="<?php echo $DOMAIN ?>/public/bootstrap5/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="<?php echo $DOMAIN ?>/public/css/style.css">
-    <title>Document</title>
+    <title>Cơ sở dữ liệu</title>
 </head>
 
 <body>
     <div style="text-align: center;">
-        <h1>Thông tin khách hàng</h1>
+        <h1><?php if( $data['page'] == 'ClientInfo') echo 'Thông tin khách hàng'; else if($data['page'] == 'DetailClient') echo 'Chi tiết khách hàng';else if($data['page'] == 'Add') echo 'Thêm thông tin loại phòng'; else echo 'Thống kê' ?></h1>
     </div>
     <div class="container">
         <div class="row mt-3">
             <div class="col-lg-3 col-md-4 task">
-                <div class="title">TASK</div>
                 <div class="nav-list">
                     <div class="all-item bg-primary mt-2">Danh Mục</div>
                     <div class="categories">

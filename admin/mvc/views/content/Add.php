@@ -1,9 +1,7 @@
 <?php $DOMAIN = 'http://localhost/Database/admin' ?>
 <form action="" id="form_add">
-    <div class="row">
-        <div class="col-lg-12">
             <div>
-                <label for="" class="form-label mt-2">Tên loại phòng: </label>
+                <label for="input-name" class="form-label mt-2">Tên loại phòng: </label>
                 <input type="text" class="form-control input-name" required />
             </div>
             <div>
@@ -42,8 +40,6 @@
                     </div>
                 <?php } ?>
             </div>
-        </div>
-    </div>
     <div class="contain-button">
         <button type="submit" class="btn btn-primary button-add mt-3">Add new</button>
         <button type="reset" class="btn btn-danger mt-3 ms-4 button-reset">Reset</button>

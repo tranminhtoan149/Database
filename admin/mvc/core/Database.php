@@ -4,7 +4,7 @@ class Database
     public $conn;
     protected $hostname = "localhost";
     protected $username = "root";
-    protected $password = "1915564";
+    protected $password = "123456";
     protected $dbname = 'ass2';
     function __construct()
     {
