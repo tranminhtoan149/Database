@@ -26,17 +26,18 @@
                     <div class="all-item bg-primary mt-2">Danh Mục</div>
                     <div class="categories">
                         <div class="category mt-2">
-                            <button type="button" class="btn btn-secondary">Thông tin khách hàng</button>
+                            <form action="<?php echo $DOMAIN ?>/Home/" method="get">
+                                <button type="submit" class="btn btn-secondary">Thông tin khách hàng</button>
+                            </form>
                         </div>
                         <div class="category mt-2">
                             <form action="<?php echo $DOMAIN ?>/Home/AddPage" method="get">
                                 <button type="submit" class="btn btn-secondary">Thêm thông tin loại phòng</button>
                             </form>
-
                         </div>
                         <div class="category mt-2">
                             <form action="<?php echo $DOMAIN ?>/Home/StatisticPage" method="get">
-                                <button type="button" class="btn btn-secondary">Thống kê</button>
+                                <button type="submit" class="btn btn-secondary">Thống kê</button>
                             </form>
                         </div>
                     </div>
