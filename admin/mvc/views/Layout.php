@@ -10,26 +10,35 @@
     <link rel="stylesheet" href="<?php echo $DOMAIN ?>/public/font-awesome/css/font-awesome.min.css" />
     <script src="<?php echo $DOMAIN ?>/public/bootstrap5/jquery.min.js"></script>
     <script src="<?php echo $DOMAIN ?>/public/bootstrap5/bootstrap.bundle.min.js"></script>
+    <script src="<?php echo $DOMAIN ?>/public/js/script.js"></script>
     <link rel="stylesheet" href="<?php echo $DOMAIN ?>/public/css/style.css">
     <title>Cơ sở dữ liệu</title>
 </head>
 
 <body>
-    <div style="text-align: center;">
-<<<<<<< HEAD
-        <h1>
-            <?php if ($data['page'] == 'ClientInfo')
-                echo 'Thông tin khách hàng';
-            else if ($data['page'] == 'Add')
-                echo 'Thêm thông tin loại phòng';
-            else if ($data['page'] == 'Statistic')
-                echo 'Thống kê';
-            ?>
-        </h1>
-=======
-        <h1><?php if( $data['page'] == 'ClientInfo') echo 'Thông tin khách hàng'; else if($data['page'] == 'DetailClient') echo 'Chi tiết khách hàng';else if($data['page'] == 'Add') echo 'Thêm thông tin loại phòng'; else echo 'Thống kê' ?></h1>
->>>>>>> c5664357f1491fdfa1587a40323733909c6d71ce
-    </div>
+    <header>
+        <div style="text-align: center;">
+            <div class="center-outer">
+                <div class="center-inner">
+
+                    <div class="bubbles">
+                        <h1>
+                            <?php if ($data['page'] == 'ClientInfo')
+                                echo 'Thông tin khách hàng';
+                            else if ($data['page'] == 'Add')
+                                echo 'Thêm thông tin loại phòng';
+                            else if ($data['page'] == 'Statistic')
+                                echo 'Thống kê';
+                            else
+                                echo 'Chi tiết khách hàng';
+                            ?>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <div class="container">
         <div class="row mt-3">
             <div class="col-lg-3 col-md-4 task">
@@ -59,8 +68,7 @@
             </div>
         </div>
     </div>
-    <script src="<?php echo $DOMAIN ?>/public/js/script.js">
-    </script>
+    <script src="<?php echo $DOMAIN ?>/public/js/script.js"> </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

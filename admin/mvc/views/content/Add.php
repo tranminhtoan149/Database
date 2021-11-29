@@ -1,20 +1,4 @@
 <?php $DOMAIN = 'http://localhost/Database/admin' ?>
-<<<<<<< HEAD
-<form id="form_add">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="mt2">
-                <label for="" class="form-label ">Loại phòng: </label>
-                <div class="input-group">
-                    <label for="" class="input-group-text ">Tên loại phòng: </label>
-                    <input type="text" class="form-control input-name" required />
-                    <label for="" class="input-group-text ">Diện tích: </label>
-                    <input type="number" min=0 class="form-control input-s" required />
-                    <label for="" class="input-group-text ">Số khách tối đa: </label>
-                    <input type="number" min=1 max=10 class="form-control input-guest" required />
-                </div>
-
-=======
 <form action="" id="form_add">
             <div>
                 <label for="input-name" class="form-label mt-2">Tên loại phòng: </label>
@@ -27,7 +11,6 @@
             <div>
                 <label for="" class="form-label mt-2">Số khách tối đa: </label>
                 <input type="number" min=1 max=10 class="form-control input-guest" required />
->>>>>>> c5664357f1491fdfa1587a40323733909c6d71ce
             </div>
             <div class="mt-2">
                 <label for="" class="form-label ">Thông tin giường: </label>

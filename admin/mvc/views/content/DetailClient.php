@@ -1,7 +1,5 @@
 <div>
-    <button type="button" class="btn btn-primary" style="margin: 20px">
-        <a href="<?php echo $DOMAIN ?>/Home">Trở lại</a>
-    </button>
+    <a class="btn btn-primary" href="<?php echo $DOMAIN ?>/Home" role="button">Trở lại</a>
 </div>
 <div class="user-info">
     <ul class="list-group">
