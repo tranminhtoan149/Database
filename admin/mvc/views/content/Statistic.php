@@ -1,3 +1,4 @@
+<?php $DOMAIN = 'http://localhost/Database/admin' ?>
 <form onsubmit="return false">
     <label class="mt-2" for="select-cn">Chọn chi nhánh:</label>
     <select class="form-control" id="select-cn">

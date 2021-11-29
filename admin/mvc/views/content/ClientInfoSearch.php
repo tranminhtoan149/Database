@@ -1,3 +1,6 @@
+<?php $DOMAIN = 'http://localhost/Database/admin' ?>
+
+
 <?php foreach ($data['listClient'] as $key => $val) { ?>
     <tr>
         <th scope="row"><?php echo $val['MA_KHACH_HANG'] ?></th>

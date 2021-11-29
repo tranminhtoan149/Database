@@ -18,9 +18,8 @@ $(".search-input").keyup(function () {
     }, 500);
 });
 //statistic
-$(".button-statistic").click(function (e) {
+$(".button-statistic").click(function () {
     if (this.form.checkValidity()) {
-        e.preventDefault();
         $.ajax({
             url: DOMAIN + "/Home/doStatistic",
             type: "post",

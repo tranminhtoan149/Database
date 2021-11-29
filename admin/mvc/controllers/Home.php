@@ -26,10 +26,6 @@ class Home extends Controller
         $this->data['dataClient'] = $client->getDetailClient($id);
         $this->view("Layout", $this->data);
     }
-
-
-
-
     function StatisticPage()
     {
         $branch = $this->model('Branch');
@@ -43,15 +39,6 @@ class Home extends Controller
         $this->data['statistic'] = $branch->getStatistic($_POST['id'], $_POST['year']);
         echo $this->view('Content/doStatistic', $this->data);
     }
-
-
-
-
-
-
-
-
-
     function AddPage()
     {
         $room = $this->model('Room');
