@@ -3,8 +3,8 @@ class Database
 {
     public $conn;
     protected $hostname = "localhost";
-    protected $username = "root";
-    protected $password = "1915564";
+    protected $username = "sManager";
+    protected $password = "admin";
     protected $dbname = 'ass2';
     function __construct()
     {

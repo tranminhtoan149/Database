@@ -16,28 +16,35 @@
 
 <body>
     <div style="text-align: center;">
-        <h1>Thông tin khách hàng</h1>
+        <h1>
+            <?php if ($data['page'] == 'ClientInfo')
+                echo 'Thông tin khách hàng';
+            else if ($data['page'] == 'Add')
+                echo 'Thêm thông tin loại phòng';
+            else if ($data['page'] == 'Statistic')
+                echo 'Thống kê';
+            ?>
+        </h1>
     </div>
     <div class="container">
         <div class="row mt-3">
             <div class="col-lg-3 col-md-4 task">
-                <div class="title">TASK</div>
                 <div class="nav-list">
-                    <div class="all-item bg-primary mt-2">Danh Mục</div>
+                    <button class="all-item bg-primary mt-2">TASK</button>
                     <div class="categories">
-                        <div class="category mt-2">
+                        <div>
                             <form action="<?php echo $DOMAIN ?>/Home/" method="get">
-                                <button type="submit" class="btn btn-secondary">Thông tin khách hàng</button>
+                                <button type="submit" class="category mt-2 <?php echo ($data['page'] == 'ClientInfo') ? 'category-checked' : '' ?>">Thông tin khách hàng</button>
                             </form>
                         </div>
-                        <div class="category mt-2">
+                        <div>
                             <form action="<?php echo $DOMAIN ?>/Home/AddPage" method="get">
-                                <button type="submit" class="btn btn-secondary">Thêm thông tin loại phòng</button>
+                                <button type="submit" class="category mt-2 <?php echo ($data['page'] == 'Add') ? 'category-checked' : '' ?>">Thêm thông tin loại phòng</button>
                             </form>
                         </div>
-                        <div class="category mt-2">
+                        <div>
                             <form action="<?php echo $DOMAIN ?>/Home/StatisticPage" method="get">
-                                <button type="submit" class="btn btn-secondary">Thống kê</button>
+                                <button type="submit" class="category mt-2 <?php echo ($data['page'] == 'Statistic') ? 'category-checked' : ''  ?>">Thống kê</button>
                             </form>
                         </div>
                     </div>

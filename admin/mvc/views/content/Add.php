@@ -1,34 +1,34 @@
 <?php $DOMAIN = 'http://localhost/Database/admin' ?>
-<form action="" id="form_add">
+<form id="form_add">
     <div class="row">
         <div class="col-lg-12">
-            <div>
-                <label for="" class="form-label mt-2">Tên loại phòng: </label>
-                <input type="text" class="form-control input-name" required />
+            <div class="mt2">
+                <label for="" class="form-label ">Loại phòng: </label>
+                <div class="input-group">
+                    <label for="" class="input-group-text ">Tên loại phòng: </label>
+                    <input type="text" class="form-control input-name" required />
+                    <label for="" class="input-group-text ">Diện tích: </label>
+                    <input type="number" min=0 class="form-control input-s" required />
+                    <label for="" class="input-group-text ">Số khách tối đa: </label>
+                    <input type="number" min=1 max=10 class="form-control input-guest" required />
+                </div>
+
             </div>
-            <div>
-                <label for="" class="form-label mt-2">Diện tích: </label>
-                <input type="number" min=0 class="form-control input-s" required />
-            </div>
-            <div>
-                <label for="" class="form-label mt-2">Số khách tối đa: </label>
-                <input type="number" min=1 max=10 class="form-control input-guest" required />
-            </div>
-            <div>
-                <label for="" class="form-label mt-2">Thông tin giường: </label>
-                <div class="input-group mb-3 mt-1">
+            <div class="mt-2">
+                <label for="" class="form-label ">Thông tin giường: </label>
+                <div class="input-group ">
                     <span class="input-group-text">Kích thước giường</span>
                     <input type="number" min="0" max=9.9 step=0.1 class="form-control input-size" required>
                     <span class="input-group-text">Số lượng giường</span>
                     <input type="number" min=1 max=10 class="form-control input-quantity" required>
                 </div>
             </div>
-            <div>
-                <label for="" class="form-label mt-2">Mô tả khác: </label>
+            <div class="mt-2">
+                <label for="" class="form-label ">Mô tả khác: </label>
                 <input type="text" class="form-control input-description" required />
             </div>
-            <div>
-                <label for="" class="form-label mt-2">Vật tư có trong loại phòng: </label>
+            <div class="mt-2">
+                <label for="" class="form-label ">Vật tư có trong loại phòng: </label>
                 <?php foreach ($data['supp'] as $key => $val) { ?>
                     <div class="input-group mb-2">
                         <div class="input-group-text p-2">
