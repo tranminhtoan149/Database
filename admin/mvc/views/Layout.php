@@ -16,19 +16,10 @@
 
 <body>
     <div style="text-align: center;">
-<<<<<<< HEAD
-        <h1>
-            <?php if ($data['page'] == 'ClientInfo')
-                echo 'Thông tin khách hàng';
-            else if ($data['page'] == 'Add')
-                echo 'Thêm thông tin loại phòng';
-            else if ($data['page'] == 'Statistic')
-                echo 'Thống kê';
-            ?>
-        </h1>
-=======
-        <h1><?php if( $data['page'] == 'ClientInfo') echo 'Thông tin khách hàng'; else if($data['page'] == 'DetailClient') echo 'Chi tiết khách hàng';else if($data['page'] == 'Add') echo 'Thêm thông tin loại phòng'; else echo 'Thống kê' ?></h1>
->>>>>>> c5664357f1491fdfa1587a40323733909c6d71ce
+        <h1><?php if ($data['page'] == 'ClientInfo') echo 'Thông tin khách hàng';
+            else if ($data['page'] == 'DetailClient') echo 'Chi tiết khách hàng';
+            else if ($data['page'] == 'Add') echo 'Thêm thông tin loại phòng';
+            else echo 'Thống kê' ?></h1>
     </div>
     <div class="container">
         <div class="row mt-3">
