@@ -70,5 +70,32 @@ $(".button-add").click(function (e) {
         });
     }
 });
-
-
+$(".login-button").click(function () {
+    $username = $(".username-input").val();
+    $password = $(".password-input").val();
+    if ($username && $password) {
+        $.ajax({
+            url: DOMAIN + "/Home/doLogin",
+            type: "post",
+            data: {
+                username: $username,
+                password: $password,
+            },
+            success: function (result) {
+                if (result == "valid") {
+                    window.location.href = DOMAIN;
+                } else {
+                    $(".err").text(result);
+                    setTimeout(() => {
+                        $(".err").text("");
+                    }, 1500);
+                }
+            },
+        });
+    } else {
+        $(".err").text("Mời bạn nhập đầy đủ tài khoản và mật khẩu");
+        setTimeout(() => {
+            $(".err").text("");
+        }, 1500);
+    }
+});

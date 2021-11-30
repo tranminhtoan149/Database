@@ -10,17 +10,23 @@
     <link rel="stylesheet" href="<?php echo $DOMAIN ?>/public/font-awesome/css/font-awesome.min.css" />
     <script src="<?php echo $DOMAIN ?>/public/bootstrap5/jquery.min.js"></script>
     <script src="<?php echo $DOMAIN ?>/public/bootstrap5/bootstrap.bundle.min.js"></script>
-    <script src="<?php echo $DOMAIN ?>/public/js/script.js"></script>
     <link rel="stylesheet" href="<?php echo $DOMAIN ?>/public/css/style.css">
     <title>Cơ sở dữ liệu</title>
 </head>
 
 <body>
+
+    <?php if (!is_logged()) {
+        header("Location: " . $DOMAIN . "/Home");
+    } ?>
     <div style="text-align: center;">
         <h1><?php if ($data['page'] == 'ClientInfo') echo 'Thông tin khách hàng';
             else if ($data['page'] == 'DetailClient') echo 'Chi tiết khách hàng';
             else if ($data['page'] == 'Add') echo 'Thêm thông tin loại phòng';
             else echo 'Thống kê' ?></h1>
+        <form action="<?php echo $DOMAIN ?>/Home/doLogout" style="position:absolute; right:10px; top:10px">
+            <button class="btn btn-danger">Logout</button>
+        </form>
     </div>
     <div class="container">
         <div class="row mt-3">

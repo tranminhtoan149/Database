@@ -6,6 +6,11 @@ class Home extends Controller
     //all client
     function HomePage()
     {
+        $this->view("Login");
+    }
+
+    function ClientPage()
+    {
         $this->data['page'] = 'ClientInfo';
         $client = $this->model('Client');
         $this->data['listClient'] = $client->getAllClientInfo();
@@ -58,5 +63,21 @@ class Home extends Controller
         $room->addSupp($_POST['supp'], $id);
         // insert supplier in room
 
+    }
+    function doLogin()
+    {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        if ($username != 'sManager') {
+            echo 'Tài khoản không tồn tại';
+        } else if ($password != 'admin') {
+            echo 'Mật khẩu không đúng';
+        } else echo 'valid';
+        set_logged($username);
+    }
+    function doLogout()
+    {
+        doLogout();
+        header("Location: http://localhost/Database/admin ");
     }
 }
