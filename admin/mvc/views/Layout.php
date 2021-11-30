@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="<?php echo $DOMAIN ?>/public/font-awesome/css/font-awesome.min.css" />
     <script src="<?php echo $DOMAIN ?>/public/bootstrap5/jquery.min.js"></script>
     <script src="<?php echo $DOMAIN ?>/public/bootstrap5/bootstrap.bundle.min.js"></script>
+    <script src="<?php echo $DOMAIN ?>/public/js/script.js"></script>
     <link rel="stylesheet" href="<?php echo $DOMAIN ?>/public/css/style.css">
     <title>Cơ sở dữ liệu</title>
 </head>
@@ -50,8 +51,7 @@
             </div>
         </div>
     </div>
-    <script src="<?php echo $DOMAIN ?>/public/js/script.js">
-    </script>
+    <script src="<?php echo $DOMAIN ?>/public/js/script.js"> </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

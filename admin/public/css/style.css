@@ -42,3 +42,42 @@
     font-size: 20px;
     text-align: center;
 }
+.center-outer {
+    display: table;
+    width: 100%;
+    height: 100%;
+    }
+    
+    .center-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    }
+    
+    /* Essential CSS - Makes the effect work */
+    
+    header {
+    background-color: #3498db;
+    }
+    
+    .bubbles {
+    display: inline-block;
+    font-family: arial;
+    position: relative;
+    }
+    
+    .bubbles h1 {
+    
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    z-index: 2;
+    }
+    
+    .individual-bubble {
+    position: absolute;
+    border-radius: 100%;
+    bottom: 10px;
+    background-color: #fff;
+    z-index: 1;
+    }
